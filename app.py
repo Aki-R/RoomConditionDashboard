@@ -3,7 +3,6 @@ import pandas as pd
 import pandas.tseries.offsets as offsets
 import numpy as np
 import plotly.express as px
-import datetime
 
 # initialize
 if "timescale" not in st.session_state:
