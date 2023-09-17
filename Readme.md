@@ -1,7 +1,8 @@
 ### Description
+Room condition monitor dashboard.
 Sample code to visualize pandas time series data.
 
-Actual app view.
+Actual app sample view.
 https://aki-r-streamlit-sample-app-gkayym.streamlit.app/
 
 ### How to install 
