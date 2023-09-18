@@ -70,9 +70,11 @@ fig_humd.update_layout(dragmode='pan')
 fig_humd.update_yaxes(title='%')
 fig_humd.update_xaxes(title=None)
 if st.session_state.timescale == "1week":
-    fig_humd.update_xaxes(range=[pd.Timestamp(datetime_before_week).to_pydatetime(), pd.Timestamp(datetime_latest).to_pydatetime()])
+    fig_humd.update_xaxes(range=[pd.Timestamp(datetime_before_week).to_pydatetime(),
+                                 pd.Timestamp(datetime_latest).to_pydatetime()])
 elif st.session_state.timescale == "1day":
-    fig_humd.update_xaxes(range=[pd.Timestamp(datetime_before_day).to_pydatetime(), pd.Timestamp(datetime_latest).to_pydatetime()])
+    fig_humd.update_xaxes(range=[pd.Timestamp(datetime_before_day).to_pydatetime(),
+                                 pd.Timestamp(datetime_latest).to_pydatetime()])
 st.plotly_chart(fig_humd, theme="streamlit", use_container_width=True, config=config)
 
 # Illuminace
